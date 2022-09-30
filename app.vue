@@ -1,7 +1,8 @@
 <template>
   <Header :title="pageTitle"></Header>
   <main>
-    <TypeCount></TypeCount>
+    <!-- <TypeCount></TypeCount> -->
+    <SpeedTest></SpeedTest>
   </main>
   <el-button color="#FBC404" v-on:click="scrollToTop">
     Go to top
@@ -14,7 +15,7 @@ const pageTitle = 'App';
 
 function scrollToTop() {
   window.scrollTo({
-    // top: document.getElementById,
+    top: 0,
     behavior: 'smooth'
   })
 }
